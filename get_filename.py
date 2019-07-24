@@ -1,3 +1,4 @@
+import warnings
 def get_filename(filename=str, mode='filename', index=0):
     '''
     @param  {str} filename (不能為空)
@@ -27,7 +28,7 @@ def get_filename(filename=str, mode='filename', index=0):
     if (str(mode) == 'filename' or (str(mode) == '1')):
         extension = filename.split(".")
         if len(extension) == 1:
-            Warning('filename have not extension!')
+            warnings.warn('filename have not extension!')
             return str(extension[0])
         else:
             del extension[-1]
