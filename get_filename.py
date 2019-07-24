@@ -3,7 +3,7 @@ def get_filename(filename=str, mode='filename', index=0):
     '''
     @param  {str} filename (不能為空)
     @param  {str} mode ('filename' or 'extension') or ( 1 or 2)
-    @param  {int} index (當 mode = 'extension' 才會作用)
+    @param  {int} index (當 mode = 'extension' 或 2 才會作用)
     @return {str}
 
     ex1 :
