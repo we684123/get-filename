@@ -11,13 +11,17 @@ def get_filename(filename=str, mode='filename', index=0):
     t -> 'explosion.hard'
 
     ex2 :
+    t = get_filename('/path/to/somefile.ext')
+    t = 'somefile'
+
+    ex3 :
     t = get_filename('explosion.hard.txt','extension',-3)
     t = get_filename('explosion.hard.txt',2,0)
     t -> 'explosion'
 
-    ex3 :
-    t = get_filename('explosion.hard.txt','extension',-1)
-    t = get_filename('explosion.hard.txt',2,-1)
+    ex4 :
+    t = get_filename('/path/to/somefile.txt','extension',-1)
+    t = get_filename('/path/to/somefile.txt',2,-1)
     t -> 'txt'
     '''
     if type(filename) != str:
@@ -26,7 +30,8 @@ def get_filename(filename=str, mode='filename', index=0):
         raise ValueError('filename can not empty')
 
     if (str(mode) == 'filename' or (str(mode) == '1')):
-        extension = filename.split(".")
+
+        extension = filename.split("/")[-1].split(".")
         if len(extension) == 1:
             warnings.warn('filename have not extension!')
             return str(extension[0])
@@ -41,7 +46,7 @@ def get_filename(filename=str, mode='filename', index=0):
     elif ((str(mode) == 'extension') or (str(mode) == '2')):
         if type(index) != int:
             raise ValueError('index is not int')
-        extension = filename.split(".")
+        extension = filename.split("/")[-1].split(".")
         if index > 0:
             if len(extension) <= abs(index):
                 raise ValueError('index is over')
