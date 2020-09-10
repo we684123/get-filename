@@ -1,8 +1,9 @@
 # get_filename
 
 我絕對不要再為了這個坑花了整整2小時 Orz......    
-如題，只是一個獲取檔案名稱或副檔名的東東。
-from a filename(str) extension or name.     
+如題，只是一個獲取檔案名稱或副檔名的東東。    
+
+From a filename(str) get extension or name.     
 
 ----
 # 用法 how to use
