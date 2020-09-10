@@ -1,6 +1,6 @@
 # get_filename
 我絕對不要再為了這個坑花了整整2小時 Orz......
-
+from a filename(str) extension or name. ex "sun.hard.txt", name = "sun.hard", extension = "txt" 
 
 ##### get_filename( filename=str, mode='filename', index=0):
 
