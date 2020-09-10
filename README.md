@@ -6,6 +6,14 @@
 From a filename(str) get extension or name.     
 
 ----
+# 安裝 install 
+
+```
+pip install get-filename
+```
+
+----
+
 # 用法 how to use
 **get_filename( filename=str, mode='filename', index=0):**
 
