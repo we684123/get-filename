@@ -4,8 +4,9 @@
 如題，只是一個獲取檔案名稱或副檔名的東東。
 from a filename(str) extension or name.     
 
-
-##### get_filename( filename=str, mode='filename', index=0):
+----
+# 用法 how to use
+**get_filename( filename=str, mode='filename', index=0):**
 
     @param  {str} filename (不能為空)
     @param  {str} mode ('filename' or 'extension') or ( 1 or 2)
